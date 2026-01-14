@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>泰国留学申请指南 | 江涛东南亚留学服务</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #3a6ea5;
+            --secondary: #ff9a3c;
+            --accent: #4ecdc4;
+            --light: #f8f9fa;
+            --dark: #2c3e50;
+            --text: #333333;
+            --shadow: rgba(0, 0, 0, 0.08);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            color: var(--text);
+            background-color: #fefefe;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 2rem;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 5px;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            border-radius: 5px;
+        }
+        
+        /* 导航栏 */
+        header {
+            background-color: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            color: var(--secondary);
+        }
+        
+        .logo span {
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        nav ul li a:hover {
+            background-color: rgba(58, 110, 165, 0.1);
+            color: var(--primary);
+        }
+        
+        nav ul li a.active {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        /* 英雄区域 */
+        .hero {
+            background: linear-gradient(135deg, rgba(58, 110, 165, 0.9) 0%, rgba(78, 205, 196, 0.9) 100%), 
+                        url('https://images.unsplash.com/photo-1528181304800-259b08848526?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23fefefe' fill-opacity='1' d='M0,64L48,80C96,96,192,128,288,128C384,128,480,96,576,85.3C672,75,768,85,864,122.7C960,160,1056,224,1152,229.3C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+            background-size: cover;
+        }
+        
+        .hero h1 {
+            color: white;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            opacity: 0.95;
+        }
+        
+        .hero .highlight {
+            background-color: rgba(255, 154, 60, 0.9);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            color: white;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(to right, var(--secondary), #ff7b00);
+            color: white;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(255, 154, 60, 0.3);
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(255, 154, 60, 0.4);
+        }
+        
+        /* 主要内容容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        section:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        /* 卡片样式 */
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px var(--shadow);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        /* 创始人介绍 */
+        .founder-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .founder-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .founder-photo {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        
+        .photo-placeholder {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--dark);
+            font-size: 1.2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .photo-placeholder i {
+            font-size: 4rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .founder-name {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .founder-title {
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        /* 公司文化 */
+        .culture-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .culture-item {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .culture-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .culture-item i {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .vision i { color: #3498db; }
+        .mission i { color: #2ecc71; }
+        .values i { color: #e74c3c; }
+        
+        /* 为什么选择泰国 */
+        .why-thailand-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .why-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            border-left: 6px solid var(--primary);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .why-card h3 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        /* 家长问题 */
+        .faq-container {
+            margin-top: 30px;
+        }
+        
+        .faq-item {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+            border-left: 5px solid var(--accent);
+        }
+        
+        .faq-question {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        /* 费用对比表 */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .comparison-table th {
+            background-color: var(--primary);
+            color: white;
+            padding: 18px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            padding: 15px 18px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .comparison-table tr:hover {
+            background-color: rgba(78, 205, 196, 0.1);
+        }
+        
+        /* 泰国留学优势 */
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .advantage-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .advantage-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .advantage-card i {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        
+        /* 大学介绍 */
+        .university-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .university-card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .university-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .university-image {
+            height: 200px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--dark);
+            font-size: 1rem;
+        }
+        
+        .university-image i {
+            font-size: 4rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .university-content {
+            padding: 25px;
+        }
+        
+        .university-rank {
+            display: inline-block;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        /* 公立私立对比 */
+        .comparison-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .comparison-card {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+        
+        .public-card {
+            border-top: 6px solid #3498db;
+        }
+        
+        .private-card {
+            border-top: 6px solid #2ecc71;
+        }
+        
+        .warning-card {
+            border-top: 6px solid #e74c3c;
+            margin-top: 30px;
+        }
+        
+        /* 联系方式 */
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-right: 15px;
+            width: 40px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-family: 'Noto Sans SC', sans-serif;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(58, 110, 165, 0.1);
+        }
+        
+        /* 页脚 */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+            margin-top: 50px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .footer-section h3:after {
+            background: var(--secondary);
+        }
+        
+        .footer-section p {
+            opacity: 0.8;
+            margin-bottom: 15px;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--secondary);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        
+        /* 返回顶部按钮 */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 1.8rem; }
+            
+            .navbar {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 5px 10px;
+            }
+            
+            .hero {
+                padding: 80px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+            
+            .university-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .comparison-cards {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>江涛东南亚留学</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">首页</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#why-thailand">为什么选择泰国</a></li>
+                    <li><a href="#universities">泰国大学</a></li>
+                    <li><a href="#comparison">公立vs私立</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>泰国留学申请指南</h1>
+            <p><span class="highlight">2026年度【中留服认证院校】指南</span></p>
+            <p>数据解读 · 专业分析 · 择校建议</p>
+            <p>出品单位：江涛东南亚留学服务 | 2026年度修订版</p>
+            <a href="#contact" class="cta-button">免费咨询留学方案</a>
+        </div>
+    </section>
+
+    <!-- 主要内容 -->
+    <div class="container">
+        <!-- 关于我们 -->
+        <section id="about">
+            <h2><i class="fas fa-user-tie"></i> 关于我们</h2>
+            <div class="founder-section">
+                <div class="founder-info">
+                    <div class="founder-name">张江涛</div>
+                    <div class="founder-title">江涛东南亚留学创始人 & 首席顾问</div>
+                    <ul class="features-list">
+                        <li><strong>十余年资深升学规划师</strong></li>
+                        <li><strong>国家认证心理咨询师（北京中科院）</strong></li>
+                        <li><strong>企业人力资源管理师</strong> | 前知名上市教育集团华北大区总经理</li>
+                    </ul>
+                    <p><strong>东南亚国家留学专家</strong></p>
+                    <p>深谙国内外教育体系与人才培养规律，擅长从心理认知、能力评估与职业方向三大维度，精准定位学生发展路径。</p>
+                    <p><strong>一站式留学解决方案</strong></p>
+                    <p>覆盖项目包括：高起本 | 专升本 | 本硕连读（3+1/4.5年） | 研究生、博士直申；签约申请与签证通过率达100%。</p>
+                </div>
+                <div class="founder-photo">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-user-circle"></i>
+                        <p>张江涛个人照片</p>
+                        <p style="font-size: 0.9rem; margin-top: 10px;">（此处可插入创始人照片）</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 公司文化 -->
+        <section>
+            <h2><i class="fas fa-building"></i> 公司文化</h2>
+            <div class="culture-grid">
+                <div class="culture-item vision">
+                    <i class="fas fa-eye"></i>
+                    <h3>愿景</h3>
+                    <p>让更多学生走向世界，拓宽人生格局</p>
+                </div>
+                <div class="culture-item mission">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>使命</h3>
+                    <p>让留学更安心、更温暖，让每个梦想都有实现的机会</p>
+                </div>
+                <div class="culture-item values">
+                    <i class="fas fa-heart"></i>
+                    <h3>价值观</h3>
+                    <p>专业专注 · 诚信负责 · 学生至上</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 为什么选择泰国 -->
+        <section id="why-thailand">
+            <h2><i class="fas fa-globe-asia"></i> 看准一带一路，泰国留学正当时！</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 25px;">传统思维正在过时：</p>
+            
+            <div class="why-thailand-grid">
+                <div class="why-card">
+                    <h3>01 留学=英美奥加？</h3>
+                    <p><strong>过去看学历，现在看机会</strong></p>
+                    <p>西方经济承压，物价高、就业难、签证难</p>
+                </div>
+                <div class="why-card">
+                    <h3>02 新现实，中国正在崛起</h3>
+                    <p><strong>一带一路是中国和东盟的桥梁</strong></p>
+                    <p>学历互认、双向奔赴；中企出海、人才缺口巨大。</p>
+                </div>
+                <div class="why-card">
+                    <h3>03 为什么是泰国？</h3>
+                    <p><strong>东南亚核心，战略位置优越</strong></p>
+                    <p>中英双语教学、留学门槛低，费用合理</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 家长最关心的留学问题 -->
+        <section>
+            <h2><i class="fas fa-question-circle"></i> 家长最关心的留学问题TOP5</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">1. 孩子高考成绩不高，还有留学机会吗？</div>
+                    <p>有！泰国大部分院校不看分，注重综合素质，低成本逆袭选项！</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">2. 一年多少钱？贵不贵？</div>
+                    <p>公立低至2万/年，一年生活费2-3万，比国内民办还省！</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">3. 英语不好能上吗？能听懂吗？</div>
+                    <p>部分院校中英文混合授课，配中文辅助或随堂翻译，适应无压力！</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">4. 这学历国家承认吗？回国能用吗？</div>
+                    <p>教育部留服认证，等同统招本科/硕士，考公考编都能用！</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">5. 毕业回国好就业吗？</div>
+                    <p>认证学历+国际视野+双语能力，岗位选择多，竞争力强！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 留学费用对比 -->
+        <section>
+            <h2><i class="fas fa-money-bill-wave"></i> 留学费用对比表</h2>
+            <p style="margin-bottom: 20px;">留学费用对比表（年总花费：学费+生活费，单位：人民币）</p>
+            <div class="comparison-table-container">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>地区/国家</th>
+                            <th>年均花费估算</th>
+                            <th>费用说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>泰国</strong></td>
+                            <td>5-8万</td>
+                            <td>学费较低，生活成本高，私校略高，曼谷生活费较其他城市稍贵</td>
+                        </tr>
+                        <tr>
+                            <td><strong>马来西亚</strong></td>
+                            <td>10-12万</td>
+                            <td>英语教学广泛，部分国际分校学费高</td>
+                        </tr>
+                        <tr>
+                            <td><strong>新加坡</strong></td>
+                            <td>25-30万</td>
+                            <td>教育质量高，生活成本高，奖学金机会多但竞争大</td>
+                        </tr>
+                        <tr>
+                            <td><strong>香港</strong></td>
+                            <td>25-30万</td>
+                            <td>国际一线城市，住宿紧张，租金高，港校学费普遍偏高</td>
+                        </tr>
+                        <tr>
+                            <td><strong>日本</strong></td>
+                            <td>20-25万</td>
+                            <td>国公立学费低，私立较高，奖学金多，打工机会丰富</td>
+                        </tr>
+                        <tr>
+                            <td><strong>韩国</strong></td>
+                            <td>20-25万</td>
+                            <td>学费适中，生活费略高，适合短期留学+升本硕路线</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 泰国留学利好政策 -->
+        <section>
+            <h2><i class="fas fa-gift"></i> 泰国留学利好政策</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <i class="fas fa-university"></i>
+                    <h3>国内专科上本科</h3>
+                    <p>学术地位同比国内985院校</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-globe-americas"></i>
+                    <h3>欧美教育体系</h3>
+                    <p>不看高考成绩，无需雅思（部分顶尖校除外）</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-language"></i>
+                    <h3>无小语种门槛</h3>
+                    <p>区别日本、韩国</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>学制短</h3>
+                    <p>本硕连读最快4.5年毕业</p>
+                </div>
+            </div>
+            <div style="background-color: rgba(78, 205, 196, 0.1); padding: 25px; border-radius: 15px; margin-top: 30px;">
+                <p style="margin-bottom: 10px;"><strong>其他优势：</strong></p>
+                <p>· 英语语言环境更好 · 世界旅游胜地 · 华人占比适中 · "预科"可上顶尖大学，同比国内985院校</p>
+            </div>
+        </section>
+
+        <!-- 泰国留学四大优势 -->
+        <section>
+            <h2><i class="fas fa-star"></i> 泰国留学四大优势</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <i class="fas fa-plane"></i>
+                    <h3>距离近，父母安心</h3>
+                    <p>昆明/南宁直飞泰国2-3小时，往返方便，签证友好，紧急情况也来得及</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-sun"></i>
+                    <h3>环境好，幸福感高</h3>
+                    <p>空气清新，四季如夏，物价低，水果海鲜丰富，住宿条件好，生活舒缓</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>文化亲近、适应快</h3>
+                    <p>华人氛围浓厚、节日保留完整，佛教国家，包容温和，人民友善</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>教学先进、压力小</h3>
+                    <p>小班教学、项目实践，不唯考试分数、师生关系平等，学习体验好</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 泰国及院校介绍 -->
+        <section>
+            <h2><i class="fas fa-landmark"></i> 泰国及院校介绍</h2>
+            <div class="card">
+                <p>泰国:全称"泰王国"，旧名"暹罗"，位于东南亚中南半岛中部。泰国首都一曼谷，是泰国以及中南半岛最大的城市，并且是东南亚第二大城市，为泰国政治、经济、贸易、交通、文化、科技、教育、宗教与各方面中心。</p>
+                <p>旅游业十分发达，被评选为2013全球最受欢迎旅游城市。曼谷被誉为是"佛教之都"。融合东西方文化、被称为包罗万象的"天使之地"。</p>
+                <p>曼谷是繁华的国际大都市，经济占全泰国经济总量的44%。泰国的教育质量也得到了国际考试机构的认可，泰国的高等教育在课程设置、教育方法和教育系统中采用欧美国家的教学模式。大多数泰国大学的学位早在十多年前就得到发达国家大学的认可。</p>
+            </div>
+        </section>
+
+        <!-- QS世界名校 -->
+        <section id="universities">
+            <h2><i class="fas fa-trophy"></i> QS世界名校</h2>
+            <div class="university-grid">
+                <!-- 朱拉隆功大学 -->
+                <div class="university-card">
+                    <div class="university-image">
+                        <i class="fas fa-university"></i>
+                        <p>朱拉隆功大学校园照片</p>
+                        <p style="font-size: 0.8rem;">（此处可插入校园照片）</p>
+                    </div>
+                    <div class="university-content">
+                        <span class="university-rank">QS排名224名</span>
+                        <h3>朱拉隆功大学</h3>
+                        <p>同哈尔滨工业大学、南方科技大学</p>
+                        <p><strong>硕博专业：</strong>东南亚研究，环境、发展与可持续性，国际关系，泰国研究，国际发展研究，文化管理，城市战略，对外泰语</p>
+                        <p><strong>免雅思项目：</strong>艺术博士学位，保录取/随堂中文翻译，寒暑假集中授课</p>
+                    </div>
+                </div>
+                
+                <!-- 玛希隆大学 -->
+                <div class="university-card">
+                    <div class="university-image">
+                        <i class="fas fa-university"></i>
+                        <p>玛希隆大学校园照片</p>
+                        <p style="font-size: 0.8rem;">（此处可插入校园照片）</p>
+                    </div>
+                    <div class="university-content">
+                        <span class="university-rank">QS排名256名</span>
+                        <h3>玛希隆大学</h3>
+                        <p>同北京师范大学262名</p>
+                        <p><strong>王牌专业：</strong>一年制硕士项目：初级卫生保健管理专业科学与技术教育硕士和博士，护理硕士和博士、教育管理硕士博士</p>
+                        <p><strong>免雅思项目：</strong>玛希隆大学的音乐学院更是泰国第一的音乐学院，也是全球十大音乐学院古典音乐、钢琴、作曲、音乐剧</p>
+                    </div>
+                </div>
+                
+                <!-- 清迈大学 -->
+                <div class="university-card">
+                    <div class="university-image">
+                        <i class="fas fa-university"></i>
+                        <p>清迈大学校园照片</p>
+                        <p style="font-size: 0.8rem;">（此处可插入校园照片）</p>
+                    </div>
+                    <div class="university-content">
+                        <span class="university-rank">QS排名601-650名</span>
+                        <h3>清迈大学</h3>
+                        <p>同人民大学、厦门大学</p>
+                        <p><strong>国际数字创新学院：</strong>预科+本科：数字创新硕士：数字技术管理博士：数字技术管理</p>
+                        <p><strong>入学要求：</strong>数字创新支持预科，清迈大学开设语言班（英语+泰语），数字技术管理（入学无英语要求，配翻译）</p>
+                    </div>
+                </div>
+                
+                <!-- 泰国农业大学 -->
+                <div class="university-card">
+                    <div class="university-image">
+                        <i class="fas fa-university"></i>
+                        <p>农业大学校园照片</p>
+                        <p style="font-size: 0.8rem;">（此处可插入校园照片）</p>
+                    </div>
+                    <div class="university-content">
+                        <span class="university-rank">QS排名801-1000名</span>
+                        <h3>泰国农业大学</h3>
+                        <p>同北京交通大学</p>
+                        <p><strong>本、硕、博专业：</strong>本科：对外泰语专业、国际商务、物流管理、管学、数字营销与品牌推广、会计学；硕士：对外泰语专业、物流管理；硕/博:工商管理</p>
+                        <p><strong>入学要求：</strong>部分专业支持：英语测试代替雅思成绩要求，毕业达到雅思5.0</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <p style="font-size: 1.1rem; margin-bottom: 20px;"><strong>其他知名泰国大学：</strong></p>
+                <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+                    <span style="background-color: #e3f2fd; padding: 10px 20px; border-radius: 20px;">诗纳卡琳威洛大学</span>
+                    <span style="background-color: #e3f2fd; padding: 10px 20px; border-radius: 20px;">宣泰那他皇家大学</span>
+                    <span style="background-color: #e3f2fd; padding: 10px 20px; border-radius: 20px;">国王科技大学</span>
+                    <span style="background-color: #e3f2fd; padding: 10px 20px; border-radius: 20px;">曼谷皇家理工</span>
+                    <span style="background-color: #f3e5f5; padding: 10px 20px; border-radius: 20px;">泰国工商大学</span>
+                    <span style="background-color: #f3e5f5; padding: 10px 20px; border-radius: 20px;">暹罗大学</span>
+                    <span style="background-color: #f3e5f5; padding: 10px 20px; border-radius: 20px;">曼谷大学</span>
+                    <span style="background-color: #f3e5f5; padding: 10px 20px; border-radius: 20px;">博仁大学</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 公立vs私立对比 -->
+        <section id="comparison">
+            <h2><i class="fas fa-balance-scale"></i> 公立 vs 私立，哪种适合你？</h2>
+            <div class="comparison-cards">
+                <div class="comparison-card public-card">
+                    <h3>01 公立大学（适合学霸型学生）</h3>
+                    <p><strong>代表院校：</strong>朱拉隆功大学、玛希隆大学、清迈大学等</p>
+                    <p><strong>特点：</strong>QS世界排名高、师资强、学术氛围浓厚</p>
+                    <p><strong>要求：</strong>雅思6.0-6.5，高考600分左右或大学均分较高</p>
+                </div>
+                <div class="comparison-card private-card">
+                    <h3>02 皇家、私立大学（适合大部分学生）</h3>
+                    <p><strong>代表院校：</strong>宣豪那他皇家大学、泰国工商大学、曼谷皇家理工大学等</p>
+                    <p><strong>特点：</strong>招生门槛低、灵活实用课程、就业导向强</p>
+                    <p><strong>优势：</strong>不强制雅思，适合基础一般的学生，毕业率高</p>
+                </div>
+            </div>
+            
+            <div class="warning-card">
+                <h3><i class="fas fa-exclamation-triangle"></i> 避坑提醒：不推荐院校</h3>
+                <p><strong>格乐大学、易三仓大学、斯坦福大学</strong></p>
+                <p><strong>原因：</strong>中国学生扎堆，部分院校教学质量一般，或有认证风险</p>
+            </div>
+        </section>
+
+        <!-- 泰国留学申请建议 -->
+        <section>
+            <h2><i class="fas fa-lightbulb"></i> 泰国留学申请建议</h2>
+            <div class="card">
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li style="padding: 12px 0; border-bottom: 1px solid #eee; position: relative; padding-left: 35px;">
+                        <span style="position: absolute; left: 0; color: var(--primary); font-weight: bold;">✓</span>
+                        根据自身学术背景选择合适的院校类型（公立/私立）
+                    </li>
+                    <li style="padding: 12px 0; border-bottom: 1px solid #eee; position: relative; padding-left: 35px;">
+                        <span style="position: absolute; left: 0; color: var(--primary); font-weight: bold;">✓</span>
+                        优先选择中留服认证院校，确保学历回国认可
+                    </li>
+                    <li style="padding: 12px 0; border-bottom: 1px solid #eee; position: relative; padding-left: 35px;">
+                        <span style="position: absolute; left: 0; color: var(--primary); font-weight: bold;">✓</span>
+                        考虑专业与未来职业规划的匹配度
+                    </li>
+                    <li style="padding: 12px 0; border-bottom: 1px solid #eee; position: relative; padding-left: 35px;">
+                        <span style="position: absolute; left: 0; color: var(--primary); font-weight: bold;">✓</span>
+                        了解授课语言要求，选择适合自己的授课方式
+                    </li>
+                    <li style="padding: 12px 0; position: relative; padding-left: 35px;">
+                        <span style="position: absolute; left: 0; color: var(--primary); font-weight: bold;">✓</span>
+                        提前准备申请材料，尽早申请
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 联系方式 -->
+        <section id="contact">
+            <h2><i class="fas fa-phone-alt"></i> 联系我们</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>江涛东南亚留学服务</h3>
+                    <p style="font-style: italic; margin-bottom: 25px;">"帆起之处，途见未来。为每一个出国梦，找到最靠谱的路径。"</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p><strong>咨询电话</strong></p>
+                            <p>+86 183 9217 0097</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fab fa-weixin"></i>
+                        <div>
+                            <p><strong>微信</strong></p>
+                            <p>wd530196416</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p><strong>地址</strong></p>
+                            <p>中国陕西西安高新区高新5楼</p>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 30px;">
+                        <h4>服务承诺</h4>
+                        <ul style="list-style-type: none; padding-left: 0;">
+                            <li style="padding: 8px 0; border-bottom: 1px solid #eee;">一站式留学规划服务</li>
+                            <li style="padding: 8px 0; border-bottom: 1px solid #eee;">100%签约申请与签证通过率</li>
+                            <li style="padding: 8px 0;">专业评估+心理辅导+职业导向</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>免费咨询</h3>
+                    <form id="consultForm">
+                        <div class="form-group">
+                            <label for="name">姓名 *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">联系电话 *</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">电子邮箱</label>
+                            <input type="email" id="email" name="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="education">当前学历</label>
+                            <select id="education" name="education" class="form-control">
+                                <option value="">请选择</option>
+                                <option value="highschool">高中/中专</option>
+                                <option value="college">专科</option>
+                                <option value="bachelor">本科</option>
+                                <option value="master">硕士</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">咨询内容 *</label>
+                            <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button" style="width: 100%; margin-top: 10px;">提交咨询</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>江涛东南亚留学</h3>
+                    <p>专业的东南亚留学规划机构，致力于为学生提供一站式留学解决方案，让留学更安心、更温暖。</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-qq"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                        <li><a href="#why-thailand">为什么选择泰国</a></li>
+                        <li><a href="#universities">泰国大学</a></li>
+                        <li><a href="#comparison">公立vs私立</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>服务项目</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">高起本留学规划</a></li>
+                        <li><a href="#">专升本留学方案</a></li>
+                        <li><a href="#">本硕连读(3+1/4.5年)</a></li>
+                        <li><a href="#">研究生、博士直申</a></li>
+                        <li><a href="#">签证申请服务</a></li>
+                        <li><a href="#">职业规划指导</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>联系我们</h3>
+                    <p><i class="fas fa-phone" style="margin-right: 10px;"></i> +86 183 9217 0097</p>
+                    <p><i class="fab fa-weixin" style="margin-right: 10px;"></i> wd530196416</p>
+                    <p><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> 中国陕西西安高新区高新5楼</p>
+                    <p>服务时间：周一至周五 9:00-18:00</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 江涛东南亚留学服务. 泰国留学申请指南 2026年度修订版. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script>
+        // 返回顶部功能
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // 表单提交处理
+        document.getElementById('consultForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // 获取表单数据
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            // 简单验证
+            if (!name || !phone || !message) {
+                alert('请填写所有必填字段！');
+                return;
+            }
+            
+            // 模拟提交成功
+            alert(`感谢 ${name} 的咨询！我们会尽快通过电话 ${phone} 与您联系。`);
+            
+            // 重置表单
+            document.getElementById('consultForm').reset();
+        });
+        
+        // 平滑滚动到锚点
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // 移除所有active类
+                document.querySelectorAll('nav a').forEach(link => {
+                    link.classList.remove('active');
+                });
+                
+                // 为当前链接添加active类
+                this.classList.add('active');
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#home') {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+        
+        // 卡片悬停效果
+        document.querySelectorAll('.card, .university-card, .advantage-card, .culture-item').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+        
+        // 页面加载时检查当前滚动位置
+        window.addEventListener('load', () => {
+            const hash = window.location.hash;
+            if (hash) {
+                setTimeout(() => {
+                    const targetElement = document.querySelector(hash);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                }, 100);
+            }
+        });
+    </script>
+</body>
+</html>
