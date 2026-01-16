@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SeoulVibe | 韩系时尚生活馆</title>
+    <title>SeoulVibe | 子璇姐姐潮流前线 - 韩系时尚生活馆</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -84,6 +84,19 @@
             font-size: 24px;
         }
         
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .chinese-name {
+            font-family: var(--font-sans);
+            font-size: 14px;
+            font-weight: normal;
+            margin-top: 2px;
+            color: #666;
+        }
+        
         .nav-menu {
             display: flex;
             list-style: none;
@@ -146,9 +159,35 @@
             cursor: pointer;
         }
         
+        /* 联系方式横幅 */
+        .contact-banner {
+            background-color: var(--soft-pink);
+            padding: 8px 0;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 70px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .contact-icon {
+            color: var(--accent);
+        }
+        
         /* 英雄区域 */
         .hero {
-            height: 85vh;
+            height: 80vh;
             background: linear-gradient(rgba(249, 245, 240, 0.8), rgba(249, 245, 240, 0.9)), 
                         url('https://images.unsplash.com/photo-1558769132-cb1c458e4222?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
             background-size: cover;
@@ -157,7 +196,6 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            margin-top: 70px;
             padding: 0 20px;
         }
         
@@ -501,6 +539,24 @@
             font-size: 14px;
         }
         
+        .contact-details {
+            margin-top: 20px;
+            color: #ccc;
+            font-size: 14px;
+        }
+        
+        .contact-details p {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .contact-details i {
+            color: var(--accent);
+            width: 20px;
+        }
+        
         /* 响应式设计 */
         @media (max-width: 992px) {
             .nav-menu {
@@ -517,6 +573,10 @@
             
             .header-icons a:not(:last-child) {
                 display: none;
+            }
+            
+            .contact-banner {
+                margin-top: 70px;
             }
         }
         
@@ -546,6 +606,11 @@
             .section-title {
                 font-size: 28px;
             }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
         }
         
         @media (max-width: 576px) {
@@ -557,6 +622,14 @@
             
             .hero {
                 height: 60vh;
+            }
+            
+            .logo {
+                font-size: 22px;
+            }
+            
+            .chinese-name {
+                font-size: 12px;
             }
         }
         
@@ -597,7 +670,10 @@
         <div class="container header-container">
             <a href="#" class="logo">
                 <i class="fas fa-star"></i>
-                Seoul<span>Vibe</span>
+                <div class="logo-text">
+                    <div>Seoul<span>Vibe</span></div>
+                    <div class="chinese-name">子璇姐姐潮流前线</div>
+                </div>
             </a>
             
             <button class="mobile-menu-btn">
@@ -622,6 +698,24 @@
             </div>
         </div>
     </header>
+
+    <!-- 联系方式横幅 -->
+    <div class="contact-banner">
+        <div class="container contact-info">
+            <div class="contact-item">
+                <i class="fas fa-comment-alt contact-icon"></i>
+                <span>微信: TSQ1101</span>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-whatsapp contact-icon"></i>
+                <span>WhatsApp: 00628119356090</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-headset contact-icon"></i>
+                <span>客服时间: 9:00-21:00</span>
+            </div>
+        </div>
+    </div>
 
     <!-- 英雄区域 -->
     <section class="hero">
@@ -832,6 +926,7 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <h3>SeoulVibe</h3>
+                    <p class="chinese-name">子璇姐姐潮流前线</p>
                     <p>沉浸式韩系生活体验馆，为您带来最地道的韩国时尚、美容与零食。</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -864,17 +959,22 @@
                 </div>
                 
                 <div class="footer-col">
-                    <h3>订阅资讯</h3>
-                    <p>订阅获取最新韩流资讯、独家优惠与新品通知</p>
-                    <div class="newsletter">
+                    <h3>联系我们</h3>
+                    <div class="contact-details">
+                        <p><i class="fab fa-weixin"></i> 微信: TSQ1101</p>
+                        <p><i class="fab fa-whatsapp"></i> WhatsApp: 00628119356090</p>
+                        <p><i class="fas fa-envelope"></i> 邮箱: contact@seoulvibe.com</p>
+                        <p><i class="fas fa-clock"></i> 客服时间: 9:00-21:00</p>
+                    </div>
+                    <div class="newsletter" style="margin-top: 20px;">
                         <input type="email" placeholder="请输入您的邮箱">
-                        <a href="#" class="btn" style="width: 100%; text-align: center;">订阅</a>
+                        <a href="#" class="btn" style="width: 100%; text-align: center;">订阅资讯</a>
                     </div>
                 </div>
             </div>
             
             <div class="copyright">
-                <p>© 2026 SeoulVibe 韩系生活馆. 保留所有权利. | 隐私政策 | 使用条款</p>
+                <p>© 2026 SeoulVibe 子璇姐姐潮流前线. 保留所有权利. | 隐私政策 | 使用条款</p>
             </div>
         </div>
     </footer>
@@ -936,6 +1036,16 @@
         // 视频播放占位符
         document.querySelector('.video-placeholder').addEventListener('click', function() {
             this.innerHTML = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+        });
+        
+        // 初始化响应式菜单
+        window.addEventListener('resize', function() {
+            const navMenu = document.querySelector('.nav-menu');
+            if (window.innerWidth > 992) {
+                navMenu.style.display = 'flex';
+            } else {
+                navMenu.style.display = 'none';
+            }
         });
     </script>
 </body>
